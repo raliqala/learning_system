@@ -42,6 +42,23 @@ class RegisterController extends Controller
     }
 
     /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function showRegistrationForm()
+    {
+        $user = User::where('role_id', 1)->first();
+        //$user = DB::table('employee')->where('role', 'Admin')->first();
+        //dd($user);
+        if (!empty($user)) {
+            return redirect()->route('login');
+        }else {
+            return view('auth.register');
+        }
+    }
+
+    /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
@@ -67,6 +84,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'role_id' => 1,
             'password' => Hash::make($data['password']),
         ]);
     }
