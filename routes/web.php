@@ -21,5 +21,7 @@ Auth::routes();
 Route::get('/member', 'MemberController@index')->name('member')->middleware('member');
 Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');
 Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::get('/get_material', 'ProfileController@getMaterial');
+Route::get('/get_users', 'CreateEmployeeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
  

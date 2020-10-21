@@ -41,8 +41,32 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * Get the path to the profile picture
+     *
+     * @return string
+     */
+    public function profilePicture()
+    {
+        if ($this->avatar) {
+            return "/storage/{$this->avatar}";
+        }
+        
+        return "/storage/profile/blank-profile.png";
+    }
+
     public function role()
     {
         return $this->belongsTo(Role::class);
+    }
+
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
+
+    public function material()
+    {
+        return $this->hasMany(Material::class);
     }
 }

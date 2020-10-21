@@ -4,20 +4,21 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class Department extends Model
 {
-    protected $table = "roles";
+
+    protected $table = "departments";
     
-    protected $primaryKey = 'role_id';
+    protected $primaryKey = 'department_id';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['name', 'description'];
+    protected $fillable = ['department_name', 'department_desc'];
     
     /**
-     * Get the users for the role
+     * Get the users for the department
      *
      * @return void
      */
