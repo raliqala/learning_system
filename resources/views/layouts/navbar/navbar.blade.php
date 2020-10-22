@@ -35,18 +35,18 @@
                         $firstName = !empty($fullName) ? $fullName[0] : Auth::user()->name;
                       @endphp
                       <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                         {{Auth::user()->role_id = 1 ? "Admin" : ''}} {{ $firstName }}
+                         {{Auth::user()->role_id == 1 ? "Admin" : ''}} {{ $firstName }}
                       </a>
 
                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <h5 class="dropdown-header"></h5>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('home') }}">Home</a>
-                        @if (Auth::user()->role_id == TRUE)
+                        @if (Auth::user()->role_id == 1)
                             <a class="dropdown-item" href="{{ route('profile') }}">Profile</a>
                             <a class="dropdown-item" href="{{ route('admin') }}">User Management</a>
                         @else
-                            <a class="dropdown-item" href="{{ route('member') }}">Profile</a>
+                        <a class="dropdown-item" href="{{ route('member') }}">Profile</a>
                         @endif
                         <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="{{ route('logout') }}"
