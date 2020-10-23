@@ -78,7 +78,7 @@
                 <div class="hero-container">
                     <div class="wow fadeIn">
                         <div class="hero-logo">
-                            <img class="" src=url("./img/logo.png") alt="" />
+                            <img class="" src="https://png2.cleanpng.com/sh/e1e19c39fb209cb0ef52c47569bd2ad7/L0KzQYm3VMA2N5D7j5H0aYP2gLBuTgBtaZ95ReZxZT32dbbrTfVlfZRmjNt4bj3ygrjojvl7aaVuh9C2bHBqf376hfVle146edUBMXO8com6VPIzOV89SaM7MkO0RYK8UsI6O2M9UaMAM0e7PsH1h5==/kisspng-plant-the-seed-education-organization-logo-seeds-5ac61c9b834b21.8112231515229328915378.png" alt="" />
                         </div>
 
                         <h1>Welcome to Tholoana-the Seed</h1>
