@@ -65,34 +65,19 @@
             margin-bottom: 30px;
         }
 
+        .position-ref {
+            height: 100vh;
+            min-height: 500px;
+            background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
     </style>
 </head>
 
 <body>
-    {{-- <div class="landing-page"> --}}
-        <section id="hero">
-            <div class="hero-container">
-              <div class="wow fadeIn">
-                <div class="hero-logo">
-                  <img class="" src="../img/hero-bg2.jpg" alt="hi" />
-                </div>
-      
-                <h1>Welcome to Tholoana-the Seed</h1>
-                <h2>
-                  We all
-                  <span
-                    class="typed"
-                    data-typed-items="start somewhere, grow together!, win...!"
-                  ></span>
-                </h2>
-                <div class="actions">
-                  <a href="#about" class="btn-get-started">Get Strated</a>
-                  <a href="#services" class="btn-services">Our Services</a>
-                </div>
-              </div>
-            </div>
-          </section>
-    {{-- </div> --}}
     <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
             <div class="top-right links">
