@@ -1,85 +1,50 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Material;
 use DataTables;
+use Redirect, Response;
 
-class MaterialController extends Controller
+class DepartmentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(Request $request)
+
+    public function __construct()
     {
+        $this->middleware('auth');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function it_department()
     {
-        //
+        $results = \DB::table('categories')->where('belongTo', '=', 'it')->get();
+        $post = Material::get();
+        return view('pages.itDep')->with(compact('results', 'post'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function creative()
     {
-        //
+        $results = \DB::table('categories')->where('belongTo', '=', 'create')->get();
+        $post = Material::get();
+        return view('pages.creativeDep')->with(compact('results', 'post'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function customerService()
     {
-        //
+        $results = \DB::table('categories')->where('belongTo', '=', 'cust')->get();
+        $post = Material::get();
+        return view('pages.custDep')->with(compact('results', 'post'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function postInformation($id)
     {
-        //
+        $where = array('material_id' => $id);
+        $product  = Material::where($where)
+        ->join('categories', 'categories.category_id', '=', 'learning_material.category_id')
+        ->join('departments', 'departments.department_id', '=', 'learning_material.department')
+        ->join('employees', 'employees.employee_id', '=', 'learning_material.employee_id')
+        ->first();
+
+        return Response::json($product);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

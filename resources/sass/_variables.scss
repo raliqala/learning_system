@@ -30,8 +30,6 @@ $cyan: #6cb2eb;
 .ck-editor__editable_inline {
   min-height: 180px;
 }
-  background-color:#38c172;
-}
 
 
 
@@ -260,4 +258,17 @@ section {
 #services .service-description {
   margin-left: 80px;
   line-height: 24px;
+}
+
+
+.tab-pane {
+  padding:2rem 0;
+}
+
+.nav-link {
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(3,3,37,0.1) 100%);
+}
+.nav-link.active {
+  font-weight: bold;
+  background:#fff;
 }

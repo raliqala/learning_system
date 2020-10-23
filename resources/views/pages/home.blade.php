@@ -66,23 +66,15 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-6 service-item">
                                 <div class="service-icon"><i class="fa fa-desktop"></i></div>
-                                <h4 class="service-title"><a href="/it-page">IT Department</a></h4>
+                                <h4 class="service-title"><a href="/it_department">IT Department</a></h4>
                                 <p class="service-description">
                                     Voluptatum deleniti atque corrupti quos dolores et quas
                                     molestias excepturi sint occaecati cupiditate non provident
                                 </p>
                             </div>
                             <div class="col-lg-4 col-md-6 service-item">
-                                <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-                                <h4 class="service-title"><a href="">Human Reasource</a></h4>
-                                <p class="service-description">
-                                    Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat tarad limino ata
-                                </p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 service-item">
                                 <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-                                <h4 class="service-title"><a href="">Customer Service</a></h4>
+                                <h4 class="service-title"><a href="/customer_department">Customer Service</a></h4>
                                 <p class="service-description">
                                     Duis aute irure dolor in reprehenderit in voluptate velit esse
                                     cillum dolore eu fugiat nulla pariatur
@@ -90,7 +82,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 service-item">
                                 <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-                                <h4 class="service-title"><a href="">Creative</a></h4>
+                                <h4 class="service-title"><a href="/creative_department">Creative</a></h4>
                                 <p class="service-description">
                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa
                                     qui officia deserunt mollit anim id est laborum

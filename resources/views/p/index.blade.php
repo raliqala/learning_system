@@ -71,6 +71,11 @@
                                                             <option selected disabled>Please select a category</option>
                                                             <option value="1" id="php">PHP</option>
                                                             <option value="2" id="Marketing">Marketing</option>
+                                                            <option value="3" id="development">development</option>
+                                                            <option value="4" id="management">content</option>
+                                                            <option value="5" id="design">design</option>
+                                                            <option value="6" id="communation">communation</option>
+                                                            <option value="7" id="response">response</option>
                                                         </select>
                                                     </div>
                                                 </div>

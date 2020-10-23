@@ -6,7 +6,11 @@
 
 .dropdown-menu > .dropdown-item:hover {
   color: #FFF;
-  background-color: #38c172;
+  background-color: #5A7BF6;
+}
+
+.ck-editor__editable_inline {
+  min-height: 180px;
 }
 
 /*------------------------------------------------------
@@ -237,8 +241,17 @@ section {
   line-height: 24px;
 }
 
-.ck-editor__editable_inline {
-  min-height: 180px;
+.tab-pane {
+  padding: 2rem 0;
+}
+
+.nav-link {
+  background: linear-gradient(180deg, white 0%, rgba(3, 3, 37, 0.1) 100%);
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background: #fff;
 }
 
 /*!
