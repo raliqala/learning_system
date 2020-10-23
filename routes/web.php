@@ -33,4 +33,9 @@ Route::post('/add_material', 'MemberController@store');
 Route::get('/remove_material/{id}', 'MemberController@destroy');
 Route::get('/edit_material/{id}/edit', 'MemberController@edit');
 Route::get('/get_material', 'MemberController@getMaterial');
+
+Route::get('/it_department', 'DepartmentController@it_department');
+Route::get('/creative_department', 'DepartmentController@creative');
+Route::get('/customer_department', 'DepartmentController@customerService');
+Route::get('/get_postInfo/{id}', 'DepartmentController@postInformation');
  
