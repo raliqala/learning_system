@@ -112,7 +112,7 @@
                       <h6 class="mb-0">Department</h6>
                     </div>
                     <div class="col text-secondary">
-                      {{$employee->department_name}}
+                      {{$employee->department_name ?? ""}}
                     </div>
                   </div>
                 </div>
