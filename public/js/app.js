@@ -65896,7 +65896,7 @@ if (document.getElementById('example')) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/img-loader/index.js):\nError: ENOENT: no such file or directory, open 'C:\\xampp\\htdocs\\learning_system\\resources\\views\\img\\hero-bg2.jpg'\n    at C:\\xampp\\htdocs\\learning_system\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\xampp\\htdocs\\learning_system\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\xampp\\htdocs\\learning_system\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\xampp\\htdocs\\learning_system\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)");
 
 /***/ }),
 
