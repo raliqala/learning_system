@@ -16,6 +16,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+
+        <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet"
+      />
+  
+      <!-- Vendor CSS Files -->
+      <link href="../vendor/icofont/icofont.min.css" rel="stylesheet" />
+      <link
+        href="../vendor/owl.carousel/assets/owl.carousel.min.css"
+        rel="stylesheet"
+      />
+      <link href="../vendor/venobox/venobox.css" rel="stylesheet" />
+      <link href="../vendor/aos/aos.css" rel="stylesheet" />
+
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js">
     </script>
